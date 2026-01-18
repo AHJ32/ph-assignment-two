@@ -44,7 +44,7 @@ body {
     display: flex;
     gap: .25rem;
     align-items: center;
-    padding: .3125rem 1.25rem;
+    padding: .875rem 1rem;
     border-radius: 625rem;
     cursor: pointer;
 }
@@ -54,6 +54,7 @@ body {
 }
 
 #nav-btn {
+    margin: 0;
     font-weight: 600;
     line-height: 19px;
     text-align: left;
@@ -77,9 +78,6 @@ body {
 }
 
 .hero-mic {
-    /* box-sizing: border-box;
-    border: 8px solid rgba(42, 24, 108, 1);
-    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1))); */
     padding: 9.375rem;
     background-image: url("./assets/hero-circle.png");
     background-repeat: no-repeat;
@@ -91,6 +89,27 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 3.75rem;
+    border: var(--border-test);
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 75%;
+    padding: .5rem 1rem;
+    scale: 150%;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    background-color: rgba(0, 255, 136, 1);
+}
+
+.badge p {
+    margin: 0;
+    color: rgba(26, 11, 46, 1);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.375rem;
 }
 
 .hero-mic img {
@@ -109,4 +128,54 @@ body {
     opacity: 90%;
     margin-top: .75rem;
     line-height: 1.1875rem;
+}
+
+.hero-btns,
+.mail-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-btn {
+    gap: 10px cur
+}
+
+.spotify-btn p,
+.mail-btn p {
+    font-weight: 600;
+    line-height: 1.1875rem;
+    margin: 0;
+}
+
+.mail-btn {
+    gap: .625rem;
+    padding: .875rem 1rem;
+    border-radius: 625rem;
+    cursor: pointer;
+    border: 1px solid rgba(0, 255, 136, 1);
+    transition: .6s ease;
+}
+
+.mail-btn p {
+    color: rgba(0, 255, 136, 1);
+}
+
+.hero-btns {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.mail-btn:hover {
+    background-color: rgb(4, 126, 69);
+
+}
+
+.mail-btn:hover p {
+    color: white;
+}
+
+.mail-btn:hover img {
+    filter: brightness(0) invert(1);
 }
