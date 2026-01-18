@@ -1,12 +1,23 @@
 :root {
     --border-test: 2px dotted yellow;
-    --bg-color: #1B1635;
-    --bg-button: linear-gradient(48deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    --bg-color: #1b132f;
+    --bg-button: linear-gradient(48deg,
+            rgba(247, 233, 63, 1),
+            rgba(251, 9, 180, 1),
+            rgba(145, 0, 248, 1));
+    --hr-line: 1px solid rgb(114, 67, 179);
+    --green: rgba(0, 255, 136, 1);
 }
 
 .perfect-width_margin {
     width: 80%;
     margin: 1.875rem auto;
+}
+
+h2,
+h3,
+P {
+    margin: 0;
 }
 
 body {
@@ -42,9 +53,9 @@ body {
     background-position: left center;
     transition: background-position 0.6s ease;
     display: flex;
-    gap: .25rem;
+    gap: 0.25rem;
     align-items: center;
-    padding: .875rem 1rem;
+    padding: 0.875rem 1rem;
     border-radius: 625rem;
     cursor: pointer;
 }
@@ -63,7 +74,7 @@ body {
 .hero {
     max-width: 100%;
     margin-top: 1.875rem;
-    border-top: 1px solid rgb(114, 67, 179);
+    border-top: var(--hr-line);
     background-image: url("./assets/hero-bg.png");
     background-size: cover;
     background-position: center;
@@ -74,7 +85,6 @@ body {
     align-items: center;
     height: 56.25rem;
     padding-top: 3.125rem;
-
 }
 
 .hero-mic {
@@ -96,11 +106,11 @@ body {
     position: absolute;
     top: 20px;
     left: 75%;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     scale: 150%;
     border-radius: 1000px;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
-    background-color: rgba(0, 255, 136, 1);
+    background-color: var(--green);
 }
 
 .badge p {
@@ -124,8 +134,8 @@ body {
 }
 
 .hero-text p {
-    opacity: 90%;
-    margin-top: .75rem;
+    opacity: 80%;
+    margin-top: 0.75rem;
     line-height: 1.1875rem;
 }
 
@@ -137,7 +147,7 @@ body {
 }
 
 .spotify-btn {
-    gap: 10px cur
+    gap: 10px cur;
 }
 
 .spotify-btn p,
@@ -148,27 +158,26 @@ body {
 }
 
 .mail-btn {
-    gap: .625rem;
-    padding: .875rem 1rem;
+    gap: 0.625rem;
+    padding: 0.875rem 1rem;
     border-radius: 625rem;
     cursor: pointer;
-    border: 1px solid rgba(0, 255, 136, 1);
-    transition: .6s ease;
+    border: 1px solid var(--green);
+    transition: 0.6s ease;
 }
 
 .mail-btn p {
-    color: rgba(0, 255, 136, 1);
+    color: var(--green);
 }
 
 .hero-btns {
-    margin-top: 24px;
+    margin-top: 1.5rem;
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .mail-btn:hover {
     background-color: rgb(4, 126, 69);
-
 }
 
 .mail-btn:hover p {
@@ -177,4 +186,68 @@ body {
 
 .mail-btn:hover img {
     filter: brightness(0) invert(1);
+}
+
+.about {
+    border-bottom: var(--hr-line);
+    padding-bottom: 5rem;
+}
+
+.about-text {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 5rem; */
+}
+
+.about-text h2 {
+    font-style: Bold;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+}
+
+#about-text-p {
+    margin-top: 1rem;
+    line-height: 1.75rem;
+    text-align: center;
+    opacity: 80%;
+    width: 61%;
+}
+
+#about-text-extra-p {
+    margin-top: 2.5rem;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+}
+
+.card {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card h3 {
+    color: var(--green);
+
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.625rem;
+
+    text-transform: capitalize;
+}
+
+.card p {
+    margin-top: 1rem;
+    opacity: 80%;
+    line-height: 1.25rem;
+    text-transform: uppercase;
 }
