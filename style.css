@@ -4,9 +4,12 @@
     --bg-button: linear-gradient(48deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
 }
 
-body {
+.perfect-width_margin {
     width: 80%;
     margin: 1.875rem auto;
+}
+
+body {
     padding: 0;
     font-family: "Inter", sans-serif;
     background-color: var(--bg-color);
@@ -16,8 +19,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(114, 67, 179);
-    padding-bottom: 1.625rem;
 }
 
 .nav-menu {
@@ -54,4 +55,10 @@ body {
     font-weight: 600;
     line-height: 19px;
     text-align: left;
+}
+
+.hero {
+    max-width: 100%;
+    margin-top: 1.875rem;
+    border-top: 1px solid rgb(114, 67, 179);
 }
