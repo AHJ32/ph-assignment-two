@@ -89,7 +89,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 3.75rem;
-    border: var(--border-test);
     position: relative;
 }
 
