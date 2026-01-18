@@ -14,6 +14,7 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
     background-color: var(--bg-color);
+    color: white;
 }
 
 .navbar {
@@ -70,8 +71,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 900px;
-    padding-top: 50px;
+    height: 56.25rem;
+    padding-top: 3.125rem;
 
 }
 
@@ -79,19 +80,33 @@ body {
     /* box-sizing: border-box;
     border: 8px solid rgba(42, 24, 108, 1);
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1))); */
-    padding: 150px;
+    padding: 9.375rem;
     background-image: url("./assets/hero-circle.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 140px;
-    height: 140px;
+    width: 8.75rem;
+    height: 8.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .hero-mic img {
     scale: 140%;
+}
+
+.hero-text h2 {
+    margin: 2.5rem 0 0;
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: 800;
+    line-height: 4.5625rem;
+}
+
+.hero-text p {
+    opacity: 90%;
+    margin-top: .75rem;
+    line-height: 1.1875rem;
 }
