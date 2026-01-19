@@ -429,5 +429,50 @@ body {
 
 .host-icons img {
     cursor: pointer;
-    width: 40px;
+    width: 2.5rem;
+}
+
+.footer {
+    margin-top: 7.5rem;
+    background-image: url("./assets/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-logo {
+    width: 20%;
+}
+
+.footer .footer-icon-box {
+    /* border: var(--border-test); */
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.footer-icon {
+    filter: brightness(0) invert(1);
+    display: flex;
+    gap: .625rem;
+}
+
+.footer-icon p {
+    font-style: Medium;
+    font-weight: 500;
+    opacity: 60%;
+    line-height: 1.1875rem;
+    text-align: left;
+    width: 100%;
+}
+
+.footer small {
+    opacity: 60%;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
