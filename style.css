@@ -67,7 +67,7 @@ body {
 #nav-btn {
     margin: 0;
     font-weight: 600;
-    line-height: 19px;
+    line-height: 1.1875rem;
     text-align: left;
 }
 
@@ -104,11 +104,11 @@ body {
 
 .badge {
     position: absolute;
-    top: 20px;
+    top: 1.25rem;
     left: 75%;
     padding: 0.5rem 1rem;
     scale: 150%;
-    border-radius: 1000px;
+    border-radius: 62.5rem;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     background-color: var(--green);
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .spotify-btn {
-    gap: 10px cur;
+    gap: .625rem;
 }
 
 .spotify-btn p,
@@ -225,7 +225,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 20%);
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 
 .card {
@@ -255,7 +255,7 @@ body {
 
 .why {
     background-color: #2C003F;
-    padding-top: 150px
+    padding-top: 9.375rem
 }
 
 .why h2 {
@@ -291,7 +291,7 @@ body {
 }
 
 .cards p {
-    line-height: 28px;
+    line-height: 1.75rem;
     opacity: 60%;
     text-align: left;
 }
@@ -327,17 +327,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .featured-yt-cards {
     display: flex;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 
 .yt-card-texts {
-    padding: 24px 24px 0 24px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start2;
@@ -370,7 +370,7 @@ body {
 .duration {
     padding: .75rem 1.5rem 1.5rem 1.5rem;
     display: flex;
-    gap: 6px;
+    gap: .375rem;
     align-items: center;
     justify-content: flex-start;
 }
@@ -380,4 +380,54 @@ body {
     font-weight: 600;
     line-height: 1.5rem;
     letter-spacing: 0%;
+}
+
+.host h2 {
+    margin-top: 7.5rem;
+    font-style: Bold;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+    text-align: center;
+}
+
+.host-box {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.75rem;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+
+.host-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.host-text-box h3 {
+    font-style: Bold;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.4375rem;
+}
+
+.host-text-box p {
+    opacity: 60%;
+    line-height: 1.5rem;
+}
+
+.host-icons {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.host-icons img {
+    cursor: pointer;
+    width: 40px;
 }
