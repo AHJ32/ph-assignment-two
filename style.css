@@ -313,3 +313,71 @@ body {
 .card5 {
     padding: 2.5rem;
 }
+
+.featured h2 {
+    padding-top: 7.5rem;
+    font-style: Bold;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+    text-align: center;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.featured-yt-cards {
+    display: flex;
+    gap: 50px;
+}
+
+
+.yt-card-texts {
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start2;
+}
+
+.yt-card-texts h3 {
+    font-style: Bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8125rem;
+}
+
+.yt-card-texts p {
+    opacity: 60%;
+    line-height: 1.5rem;
+    margin-top: .75rem;
+}
+
+.yt-card {
+    width: 50%;
+    border-radius: 1.5rem;
+    background: rgba(37, 13, 68, 1);
+}
+
+.yt-card iframe {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.duration {
+    padding: .75rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.duration p {
+    color: var(--green);
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+}
