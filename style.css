@@ -225,6 +225,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 20%);
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .card {
@@ -250,4 +251,65 @@ body {
     opacity: 80%;
     line-height: 1.25rem;
     text-transform: uppercase;
+}
+
+.why {
+    background-color: #2C003F;
+    padding-top: 150px
+}
+
+.why h2 {
+    font-style: Bold;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+    text-align: center;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.875rem;
+    padding-bottom: 7.5rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.5rem;
+    gap: 1rem;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+
+.cards h3 {
+    font-style: Bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    text-transform: capitalize;
+}
+
+.cards p {
+    line-height: 28px;
+    opacity: 60%;
+    text-align: left;
+}
+
+.cards img {
+    width: 3.75rem;
+}
+
+.card1 {
+    padding: 7.5rem 3.75rem;
+    grid-row: span 2;
+}
+
+.landscape {
+    grid-column: span 2;
+    padding: 2.5rem;
+}
+
+.card5 {
+    padding: 2.5rem;
 }
